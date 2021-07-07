@@ -5,24 +5,236 @@
         <link href="H:\consultation\css\style.css"rel="stylesheet" type="text/css">
     </head>
     <body>
-    <header>
-        <div class="main">
-            <div class="logo">
-                <img src="logo.jpg.jpg">
-            </div>
-             <ul>
-             <li class="active"><a href="#banner">HOME</a></li>
-            <li><a href="#services">SERVICES</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-            </ul>
-        </div>
 
-    <div class="title">
-    <h1>CONSULTANCY</h1>
-    <p></p>
-</div>
-  </header> 
-  </div>
+       <section id="banner">
+           <img src="logoo.jpg.jpg" class="logo">
+           <div class="banner-text">
+               <h1>YOUR DOCTOR</h1>
+               <p>Meet At Your Convinence</p>
+           </div>
+           <div class="banner-btn">
+                  <a href="#"><span></span>Find Out</a>
+                  <a href="#"><span></span>Learn More</a>
+           </div>
+        </section>
+          <div id="sideNav">
+              <nav>
+                <ul>
+                     <li><a href="index.html">HOME</a></li>
+                     <li><a href="#About">ABOUT</a></li>
+                     <li><a href="#service">SERVICE</a></li>
+                     <li><a href="#footer">CONTACT</a></li>
+                     <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'"style="width:auto;">login</button></li>
+                </ul>
+              </nav>
+          </div>
+          <div id='login-form'class='login-page'>
+              <div class="form-box">
+                  <div class='button-box'>
+                      <div id='btn'></div> 
+                       
+                      <button
+                      type='button'onclick='login()'class='toggle-btn'>Log In</button>
+
+                      <button
+                      type='button'onclick='register()'class='toggle-btn'>Register</button>
+                  </div>
+                  
+                <form id='login'class='input-group-login'>
+                    <label for="email">Email*</label><br>
+                    <input type="email" id="email" name="email" placeholder="Email ID" required>
+                    <br>
+                    <br>
+                    <label for="password">password*</label><br>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <br>
+                    <br>
+
+
+                      <!-- <input type='text'class='input-field'placeholder='Email id'required> -->
+                      <!-- <input type='password'class='input-field'placeholder='Enter Password'required> -->
+                      <!-- <input type='checkbox'class='checkbox'><span>Remember Password</span> -->
+                      <button type='submit'class='submit-btn'>Log In</button> 
+                      </form>
+                      <form id='register'class='input-group-register'>
+                          <label for="first name">first name</label>
+                          <input type='text'class='input-field'placeholder='First Name'required>
+                          <input type='text'class='input-field'placeholder='Last Name'required>
+                          <input type='text'class='input-field'placeholder='Email id'required>
+                          <input type='text'class='input-field'placeholder='Enter Password'required>
+                          <input type='text'class='input-field'placeholder='Confirm Password'required>
+                          <input type='checkbox'class='check=box'><span>I agree to the terms and conditions</span>
+                          <button type='submit'class='submit-btn'></button>
+                    
+                      
+              </div>
+          </div>
+          <script>
+              var x=document.getElementById('login');
+              var y=document.getElementById('register');
+              var z=document.getElementById('btn');
+              function register()
+              {
+                  x.style.left='-400px';
+                  y.style.left-'50px';
+                  z.style.left='110px';
+              }
+              function login()
+              {
+                  x.style.left='50px';
+                  y.style.left='450px';
+                  z.style.left='0px';
+              }
+          
+           </script>
+          <script>
+              var modal=document.getElementById('login-form');
+              window.onclick=function(event)
+              {
+                  if(event.target ==function(event)
+              
+              {
+                  modal.style.display="none";
+              }
+          
+          </script>
+          <div id="menuBtn">
+              <img src="menubtn.jpg" id="menu">
+          </div>
+          <!--About-->
+          <section id="About">
+              <div class="title-text">
+                  <p>ABOUT</p>
+                  <h1>Why Choose Us</h1>
+              </div>
+              <div class="About-box">
+                    <div class="About">
+                        <h1>Experienced Doctors</h1>
+                        <div class="About-desc"></div>
+                       
+                        <div class="About-text"></div>
+                        <p>We offer you the best from our experienced consultants who give you their all and make you happy</p>
+                    </div>
+                    <div class="About-box">
+                     <div class="About">
+                     <h1>Pre Booking Online</h1>
+                    <div class="About-desc"></div>
+                    
+                    <div class="About-text"></div>
+                    <p>An opputyunity to book a session at with our doctorss at your own convinence.</p></p>
+                         </div>
+                <div class="About-box">
+                 <div class="About">
+                    <h1>Affordable Cost</h1>
+                        <div class="About-desc"></div>
+                        <div class="About-icon">
+                            
+                        </div>
+                            <div class="About-text"></div>
+                            <p>Reach out to us now at a cheap and affordable rate.</p>
+                                    </div>
+                  <div class="About-img">
+                      <img src="About.jpg">       
+              </div>
+          </section>
+
+          <!--service-->
+          <section id="service">
+              <div class="title-text">
+                  <p>SERVICES</p>
+                  <h1>Our Doctors</h1>
+              </div>
+              <div class="service-box" id="service-box">
+
+                <div class="single-service">
+                <img src="hormonal.jpg">
+                <div class="overlay"></div>
+                <div class="service-desc" id="desc"
+                    <h3 id="h3">Hormonal Imbalance<h3>
+                <hr>
+                    <p id="p">This is if you want to see a doctor for consultation</p>
+                </div>
+                </div>
+
+                 <div class="single-service">
+                 <img src="pregnancy.jpg">
+                 <div class="overlay"></div>
+                 <div class="service-desc" id="desc1">
+                        <h3>pregnancy</h3>
+                        <hr>
+                        <p>This is if you want to see a doctor for consultation</p>
+                    </div>
+                 </div>
+
+                 <div class="single-service">
+                 <img src="pediatrics.jpg">
+                 <div class="overlay"></div>
+                 <div class="service-desc" id="desc2">
+                        <h3>Pediatrics</h3>
+                        <hr>
+                        <p>This is if you want to see a doctor for consultation</p>
+                    </div>
+                 </div>
+
+                 <div class="single-service">
+                         <img src="blood.jpg">
+                        <div class="overlay"></div>
+                        <div class="service-desc" id="desc3">
+                                <h3>Blood Pressure</h3>
+                                <hr>
+                                <p>This is if you want to see a doctor for consultation</p>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+              </div>
+              
+          </section>
+
+          <!--footer-->
+          <section id="footer">
+              <div class="title-text">
+                  <p>CONTACT</p>
+                  <h1>Reach us On</h1>
+              </div>
+              <div class="social-links">
+                  <!-- Facebook</div> -->
+                  <a href="facebook"><img src="fb.png"></a>
+                 <!-- Instagram</div> -->
+                 <a href="instagram"><img src="ig.png"></a>
+                <!-- Youtube</div> -->
+                <a href="youtube"><img src="youtube.png"></a>
+        
+                
+                 
+                
+            
+              </div>
+
+              
+
+
+
+
+          </section>
+
+
+
+
+
+          <script>
+              var menuBtn = document.getElementById("menuBtn")
+              var sideNav = document.getElementById("sideNav")
+              var menu = document.getElementById("menu")
+
+              sideNav.style.right ="-160px"
+
+              menuBtn.onclick= function(){
+                  if(sideNav.style.right == "-160px")
+                      sideNav.style.right ="0";
+              }
+                  
+          </script>
+          
     </body>
 </html>
