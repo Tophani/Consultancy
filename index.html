@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>CONSOLE</title>
-        <link href="H:\consultation\css\style.css"rel="stylesheet" type="text/css">
+        <link href="css\style.css"rel="stylesheet" type="text/css">
     </head>
     <body>
 
@@ -17,7 +17,12 @@
                   <a href="#"><span></span>Learn More</a>
            </div>
         </section>
-          <div id="sideNav">
+
+            <button class="menuBtn">
+                <img src="menubtn.jpg" id="menu">
+            </button>
+        </div>
+          <div class="sideNav">
               <nav>
                 <ul>
                      <li><a href="index.html">HOME</a></li>
@@ -50,27 +55,30 @@
                     <br>
                     <br>
 
-
-                      <!-- <input type='text'class='input-field'placeholder='Email id'required> -->
+                    <!-- <input type='text'class='input-field'placeholder='Email id'required> -->
                       <!-- <input type='password'class='input-field'placeholder='Enter Password'required> -->
                       <!-- <input type='checkbox'class='checkbox'><span>Remember Password</span> -->
                       <button type='submit'class='submit-btn'>Log In</button> 
                       </form>
                       <form id='register'class='input-group-register'>
-                          <label for="first name">first name</label>
+                          <!-- <label for="first name">first name</label> -->
+<br>
                           <input type='text'class='input-field'placeholder='First Name'required>
+                          <br>
                           <input type='text'class='input-field'placeholder='Last Name'required>
+                          <br>
                           <input type='text'class='input-field'placeholder='Email id'required>
+                          <br>
                           <input type='text'class='input-field'placeholder='Enter Password'required>
+                          <br>
                           <input type='text'class='input-field'placeholder='Confirm Password'required>
+                          <br>
                           <input type='checkbox'class='check=box'><span>I agree to the terms and conditions</span>
                           <button type='submit'class='submit-btn'></button>
-                    
-                      
-              </div>
+                     </div>
           </div>
-          <script>
-              var x=document.getElementById('login');
+          
+              <!-- var x=document.getElementById('login');
               var y=document.getElementById('register');
               var z=document.getElementById('btn');
               function register()
@@ -86,8 +94,8 @@
                   z.style.left='0px';
               }
           
-           </script>
-          <script>
+          
+         
               var modal=document.getElementById('login-form');
               window.onclick=function(event)
               {
@@ -96,9 +104,26 @@
               {
                   modal.style.display="none";
               }
+              var menuBtn = document.getElementById("menuBtn")
+              var sideNav = document.getElementById("sideNav")
+              var menu = document.getElementById("menu")
+
+              sideNav.style.right ="-160px"
+
+              menuBtn.onclick= function(){
+                  if(sideNav.style.right == "-160px")
+                      sideNav.style.right ="0";
+              }
+                  
           
-          </script>
-          <div id="menuBtn">
+          </script> -->
+          <!-- menuBtn{} -->
+          <div class="menuNav">
+
+          </div>
+
+          </Nav>
+          <div class="menuBtn">
               <img src="menubtn.jpg" id="menu">
           </div>
           <!--About-->
@@ -121,7 +146,7 @@
                     <div class="About-desc"></div>
                     
                     <div class="About-text"></div>
-                    <p>An opputyunity to book a session at with our doctorss at your own convinence.</p></p>
+                    <p>An oppurtunity to book a session at with our doctorss at your own convinence.</p></p>
                          </div>
                 <div class="About-box">
                  <div class="About">
@@ -149,8 +174,8 @@
                 <div class="single-service">
                 <img src="hormonal.jpg">
                 <div class="overlay"></div>
-                <div class="service-desc" id="desc"
-                    <h3 id="h3">Hormonal Imbalance<h3>
+                <div class="service-desc" id="desc">8iyyyyyyn
+                    <h3></h3>id="h3">Hormonal Imbalance<h3>
                 <hr>
                     <p id="p">This is if you want to see a doctor for consultation</p>
                 </div>
@@ -211,19 +236,9 @@
             
               </div>
 
-              
+               </section>
 
-
-
-
-          </section>
-
-
-
-
-
-          <script>
-              var menuBtn = document.getElementById("menuBtn")
+               <!-- var menuBtn = document.getElementById("menuBtn")
               var sideNav = document.getElementById("sideNav")
               var menu = document.getElementById("menu")
 
@@ -232,9 +247,25 @@
               menuBtn.onclick= function(){
                   if(sideNav.style.right == "-160px")
                       sideNav.style.right ="0";
-              }
+              } -->
                   
-          </script>
+         
           
     </body>
+    <script>
+        var menuBtn = document.querySelector(".menuBtn");
+        var sideNav = document.querySelector(".sideNav");
+        var vlue= 1
+        console.log("wht");
+        menuBtn.addEventListener("click", function(){
+            vlue++
+            console.log(vlue);
+            if(vlue%2===1){
+                sideNav.style.display="unset";
+            }else{
+                sideNav.style.display="none";
+            }
+
+        });
+    </script>
 </html>
