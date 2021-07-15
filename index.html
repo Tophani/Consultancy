@@ -6,7 +6,7 @@
     </head>
     <body>
 
-       <section id="banner">
+       <section id="banner" id="home">
            <img src="logoo.jpg.jpg" class="logo">
            <div class="banner-text">
                <h1>YOUR DOCTOR</h1>
@@ -29,52 +29,65 @@
                      <li><a href="#About">ABOUT</a></li>
                      <li><a href="#service">SERVICE</a></li>
                      <li><a href="#footer">CONTACT</a></li>
-                     <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'"style="width:auto;">login</button></li>
+                     <li><a href="#login"><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'"style="width:auto;">login</button></a></li>
                 </ul>
               </nav>
           </div>
-          <div id='login-form'class='login-page'>
+          <div id='login-form'>
               <div class="form-box">
                   <div class='button-box'>
                       <div id='btn'></div> 
-                       
-                      <button
-                      type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                       <!-- <hr> -->
+                      <!-- <button
+                      type='button'onclick='login()'class='toggle-btn'>Log In</button> -->
 
-                      <button
+                      <!-- <button
                       type='button'onclick='register()'class='toggle-btn'>Register</button>
-                  </div>
+                  </div> -->
                   
                 <form id='login'class='input-group-login'>
                     <label for="email">Email*</label><br>
-                    <input type="email" id="email" name="email" placeholder="Email ID" required>
+                    <input type="email" id="email" name="email" placeholder="Email ID" required style="width: 20vw; height: 20px;">
                     <br>
                     <br>
                     <label for="password">password*</label><br>
-                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <input type="password" id="password" name="password" placeholder="Password" required style="width: 20vw; height: 20px;">
                     <br>
                     <br>
-
-                    <!-- <input type='text'class='input-field'placeholder='Email id'required> -->
-                      <!-- <input type='password'class='input-field'placeholder='Enter Password'required> -->
-                      <!-- <input type='checkbox'class='checkbox'><span>Remember Password</span> -->
-                      <button type='submit'class='submit-btn'>Log In</button> 
-                      </form>
+                    <br>
+                        
+                      <button type='submit'id='submit'>Log In</button> 
+                      <br>
+                       </form>
+                    
+                    <br>
+                      <!-- <button
+                      type='button'onclick='register()'class='toggle-btn'>Register</button> -->
+                  <!-- </div> -->
                       <form id='register'class='input-group-register'>
                           <!-- <label for="first name">first name</label> -->
-<br>
-                          <input type='text'class='input-field'placeholder='First Name'required>
+                        <br>
+                         <input type='text'class='input-field'placeholder='First Name'required style="width: 30vw; height: 20px;">
                           <br>
-                          <input type='text'class='input-field'placeholder='Last Name'required>
                           <br>
-                          <input type='text'class='input-field'placeholder='Email id'required>
+                          <input type='text'class='input-field'placeholder='Last Name'required style="width: 30vw; height: 20px;">
                           <br>
-                          <input type='text'class='input-field'placeholder='Enter Password'required>
                           <br>
-                          <input type='text'class='input-field'placeholder='Confirm Password'required>
+                          <input type='email'id="email" name="email" placeholder='Email id'required style="width: 30vw; height: 20px;">
+                          <br>
+                          <br>
+                          <input type='text'class='input-field'placeholder='Enter Password'required style="width: 30vw; height: 20px;">
+                          <br>
+                          <br>
+                          <input type='text'class='input-field'placeholder='Confirm Password'required style="width: 30vw; height: 20px;">
+                          <br>
                           <br>
                           <input type='checkbox'class='check=box'><span>I agree to the terms and conditions</span>
-                          <button type='submit'class='submit-btn'></button>
+                          <br>
+                          <br>
+                          <!-- <button type='submit'class='submit-btn'>Register</button> -->
+                          <a href="#home"><button id="submit" class="submit-btn">Register</button></a>
+
                      </div>
           </div>
           
@@ -126,7 +139,9 @@
           <div class="menuBtn">
               <img src="menubtn.jpg" id="menu">
           </div>
+
           <!--About-->
+          <!-- <hr> -->
           <section id="About">
               <div class="title-text">
                   <p>ABOUT</p>
@@ -146,7 +161,7 @@
                     <div class="About-desc"></div>
                     
                     <div class="About-text"></div>
-                    <p>An oppurtunity to book a session at with our doctorss at your own convinence.</p></p>
+                    <p>An oppurtunity to book a session with our doctors at your own convinence.</p></p>
                          </div>
                 <div class="About-box">
                  <div class="About">
@@ -164,6 +179,7 @@
           </section>
 
           <!--service-->
+          <hr>
           <section id="service">
               <div class="title-text">
                   <p>SERVICES</p>
@@ -174,10 +190,10 @@
                 <div class="single-service">
                 <img src="hormonal.jpg">
                 <div class="overlay"></div>
-                <div class="service-desc" id="desc">8iyyyyyyn
-                    <h3></h3>id="h3">Hormonal Imbalance<h3>
+                <div class="service-desc" id="desc">
+                    <h3>Hormonal Imbalance</h3>
                 <hr>
-                    <p id="p">This is if you want to see a doctor for consultation</p>
+                    <p>This is if you want to see a doctor for consultation</p>
                 </div>
                 </div>
 
@@ -213,30 +229,75 @@
                      </div>
                 </div>
               </div>
+              <hr style="width: 85%; text-align: center; margin-left: 5%;">
+
+              <!-- form -->
+              <div id="PROBS" >
+                  <label for="name">Name:</label><br>
+                  <input type="text" id="text" name="text" required>
+                  <br>
+                  <label for="email">Email :</label><br>
+                  <input type="email 1" id="email 1" name="email 1" required>
+                  <br>
+                  <label for="phone number">Phone number:</label><br>
+                  <input type="text" id="text" phone number="text" required
+                
+                      
+                  
+                  
+                      
+                
+                  <br>
+                  
+                  <label for="text">Symptoms:</label><br>
+                  <textarea id="text" name="text" cols="20" rows="5" style=" width: 95%; height: 30%;"></textarea>
+                  <br>
+                  <input type="submit"  value="submit" style="width: 20%; height: 10%; font-size: 1vw; margin-left: 40%; background-color: #0bddcbf1; border-radius: 5px;border: 0px; border-bottom: 1px solid; border-left: 1px solid; ">
+              </div>
               
           </section>
 
           <!--footer-->
+          <hr>
           <section id="footer">
               <div class="title-text">
+
                   <p>CONTACT</p>
                   <h1>Reach us On</h1>
               </div>
-              <div class="social-links">
-                  <!-- Facebook</div> -->
-                  <a href="facebook"><img src="fb.png"></a>
+              <div class="footer-row">
+                  <div class="footer-left">
+                      <!-- <h1>follow us</h1> -->
+                      <!-- <p>our social media handles</p> -->
+                  </div>
+                  <div class="footer-right">
+                      <h1>drop a message</h1>
+                      <p>ekwonutessy@gmail.com</p>
+                      <p>+2348056185989</p>
+                  </div>
+              </div>
+
+              <div class="social-links"
+                   href=""><i class="fas fa facebook"></i>
+                  <!-- <a href=""><i class="fas fa twitter"></i></a> --> 
+              
+              <!-- <div class="social-links">
+                  <! Facebook</div> -->
+                  <!-- <a href="facebook"><img src="fb.png"></a> -->
                  <!-- Instagram</div> -->
-                 <a href="instagram"><img src="ig.png"></a>
+                 <!-- <a href="instagram"><img src="ig.png"></a> -->
                 <!-- Youtube</div> -->
-                <a href="youtube"><img src="youtube.png"></a>
+                <!-- <a href="youtube"><img src="youtube.png"></a> -->
         
                 
                  
                 
             
-              </div>
+              </div> 
 
                </section>
+            </body>
+            </html>
 
                <!-- var menuBtn = document.getElementById("menuBtn")
               var sideNav = document.getElementById("sideNav")
@@ -247,11 +308,10 @@
               menuBtn.onclick= function(){
                   if(sideNav.style.right == "-160px")
                       sideNav.style.right ="0";
-              } -->
+              } 
                   
          
           
-    </body>
     <script>
         var menuBtn = document.querySelector(".menuBtn");
         var sideNav = document.querySelector(".sideNav");
@@ -268,4 +328,3 @@
 
         });
     </script>
-</html>
