@@ -9,6 +9,7 @@
                 height: 100vh;
                 background-position: center;
                 background-size: cover;
+                width: 100%;
             }
             
             .logo {
@@ -133,7 +134,7 @@
             }
             
             #submit {
-                width: 20%;
+                width: 30%;
                 height: 2vw;
                 background-color: #0bddcbf1;
             }
@@ -416,5 +417,200 @@
                 }
                 #desc3 {
                     margin-bottom: -20%;
+                }
+            }
+            
+            @media screen and (max-width: 1125px) {
+                #PROBS {
+                    height: 30vw;
+                }
+                .sideNav {
+                    /* width: 200px; */
+                    margin-left: 85%;
+                }
+                #login {
+                    height: 20vw;
+                }
+                #register {
+                    height: 30vw;
+                }
+            }
+            
+            @media screen and (max-width: 980px) {
+                #PROBS {
+                    height: 35vw;
+                }
+                #register {
+                    height: 35vw;
+                }
+            }
+            
+            @media screen and (max-width: 840px) {
+                #PROBS {
+                    height: 40vw;
+                    margin-left: 20%;
+                }
+                .sideNav {
+                    margin-left: 80%;
+                }
+                #login {
+                    height: 25vw;
+                    width: 35%;
+                    margin-left: 0%;
+                }
+                #register {
+                    height: 40vw;
+                    width: 55%;
+                    margin-right: 0%;
+                }
+            }
+            
+            @media screen and (max-width: 720px) {
+                #PROBS {
+                    height: 45vw;
+                }
+                #login {
+                    height: 30vw;
+                    width: 35%;
+                    margin-left: 0%;
+                }
+                #register {
+                    height: 45vw;
+                    width: 55%;
+                    margin-right: 0%;
+                }
+                #submit {
+                    height: 3vw;
+                }
+            }
+            
+            @media screen and (max-width: 635px) {
+                #PROBS {
+                    height: 50vw;
+                }
+                .sideNav {
+                    margin-left: 75%;
+                }
+                #register {
+                    height: 55vw;
+                    width: 55%;
+                    margin-right: 0%;
+                }
+            }
+            
+            @media screen and (max-width: 565px) {
+                #PROBS {
+                    height: 55vw;
+                    margin-left: 0%;
+                }
+                #login {
+                    height: 35vw;
+                    width: 35%;
+                    margin-left: 0%;
+                }
+                #register {
+                    height: 60vw;
+                    width: 55%;
+                    margin-right: 0%;
+                }
+                #submit {
+                    height: 5vw;
+                }
+            }
+            
+            @media screen and (max-width: 510px) {
+                #PROBS {
+                    height: 60vw;
+                    margin-left: 0%;
+                }
+                .sideNav {
+                    margin-left: 65%;
+                }
+                #login {
+                    height: 40vw;
+                    width: 35%;
+                    margin-left: 0%;
+                }
+                #register {
+                    height: 65vw;
+                    width: 55%;
+                    margin-right: 0%;
+                }
+                #submit {
+                    width: 40%;
+                }
+            }
+            
+            @media screen and (max-width: 465px) {
+                #PROBS {
+                    height: 65vw;
+                    margin-left: 0%;
+                }
+                #login {
+                    height: 45vw;
+                    width: 35%;
+                    margin-left: 0%;
+                }
+                #register {
+                    height: 80vw;
+                    width: 55%;
+                    margin-right: 0%;
+                }
+            }
+            
+            @media screen and (max-width: 430px) {
+                #PROBS {
+                    height: 80vw;
+                    margin-left: 0%;
+                    width: 65%;
+                }
+            }
+            
+            @media screen and (max-width: 360px) {
+                #PROBS {
+                    height: 90vw;
+                    margin-left: 0%;
+                    width: 55%;
+                }
+                .sideNav {
+                    margin-left: 55%;
+                }
+                #login {
+                    height: 55vw;
+                    width: 35%;
+                    margin-left: 0%;
+                }
+                #register {
+                    height: 95vw;
+                    width: 55%;
+                    margin-right: 0%;
+                }
+                #submit {
+                    width: 50%;
+                }
+            }
+            
+            @media screen and (max-width: 310px) {
+                #PROBS {
+                    height: 100vw;
+                    margin-left: 0%;
+                    width: 50%;
+                }
+                .sideNav {
+                    margin-left: 50%;
+                }
+                #login {
+                    height: 60vw;
+                    width: 35%;
+                    margin-left: 0%;
+                }
+                #register {
+                    height: 110vw;
+                    width: 55%;
+                    margin-right: 0%;
+                }
+                #submit {
+                    width: 60%;
+                    height: 8vw;
                 }
             }
